@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>WhatsApp Clone</title>
+    <link rel="shortcut icon" href="whatsapp.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">WhatsApp</div>
+            <div class="icons">
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-search" id="search"></i>
+                <i class="fas fa-ellipsis-v" id="settings"></i>
+            </div>
+
+
+        </header>
+        <ul class="tabs">
+            <li data-whatsapp="communities"><i class="fas fa-users"></i></li>
+            <li data-whatsapp="chats" class="active">chats <span class="num">4</span></li>
+            <li data-whatsapp="status">status</li>
+            <li data-whatsapp="calls">calls</li>
+        </ul>
+        <main class="content">
+            <section class="box communities">
+                <div class="community-img">
+                    <img src="img/communities.svg" alt="">
+                </div>
+                <div class="community-text">
+                    <h3>Introducing communities</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nihil sit veniam consequatur iure non!.</p>
+                </div>
+                <div class="button">
+                    <button class="btn">start your community</button>
+                </div>
+            </section>
+
+            <!-- chattings -->
+            <section class="box chats active">
+                <div class="data">
+                    <div class="chat-list">
+                        <div class="chat unread open">
+                            <div class="img-box">
+                                <img src="IMG_20220507_214458_181.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Rahul</h4>
+                                    <p class="time">11:00 PM</p>
+                                </div>
+                                <div class="message">
+                                    <p>Helo! How are you</p>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat unread">
+                            <div class="img-box">
+                                <img src="IMG_20220530_000813_539.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Neha</h4>
+                                    <p class="time">10:10 PM</p>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat unread">
+                            <div class="img-box">
+                                <img src="IMG_20220530_110722_501.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Chaitanya</h4>
+                                    <p class="time">10:10 PM</p>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat unread">
+                            <div class="img-box">
+                                <img src="IMG_20220530_110909_112.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Jitesh</h4>
+                                    <p class="time">9:20 PM</p>
+                                </div>
+                                <div class="message">
+                                    <p>How are you?</p>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <div class="img-box">
+                                <img src="IMG_20220530_110918_216.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Yash</h4>
+                                    <p class="time">yesterday</p>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat ">
+                            <div class="img-box">
+                                <img src="IMG_20220819_015213_850.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Sara</h4>
+                                    <p class="time">yesterday</p>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <div class="img-box">
+                                <img src="IMG_20221016_100925_732.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Adaam</h4>
+                                    <p class="time">12/04/2023</p>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-btn">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+            </section>
+            <section class="box status">
+                <div class="data">
+                    <div class="chat-list">
+                        <div class="status-head">
+                            <div class="my-img">
+                                <img src="IMG_20221001_204128_408.png" alt="">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="my-status">
+                                <h4>My status</h4>
+                                <p>Tap to add status update</p>
+                            </div>
+                        </div>
+                        <label>Recent updates</label>
+                        <div class="chat unseen">
+                            <div class="img-box">
+                                <img src="IMG_20220507_214458_181.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Rahul</h4>
+                                </div>
+                                <div class="message">
+                                    <p>Just now</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat unseen">
+                            <div class="img-box">
+                                <img src="IMG_20220530_000813_539.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Neha</h4>
+                                </div>
+                                <div class="message">
+                                    <p>20 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat unseen">
+                            <div class="img-box">
+                                <img src="IMG_20220819_015213_850.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Sara</h4>
+                                </div>
+                                <div class="message">
+                                    <p>Today, 7:17 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Viewed updates</label>
+                        <div class="chat seen">
+                            <div class="img-box">
+                                <img src="IMG_20220530_110918_216.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Yash</h4>
+                                </div>
+                                <div class="message">
+                                    <p>Today, 2:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pen-btn">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </section>
+
+            <section class="box calls">
+                <div class="data">
+                    <div class="chat-list">
+                        <div class="status-head">
+                            <div class="my-img green">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="my-status">
+                                <h4>Create call link</h4>
+                                <p>Share a link for your WhatsApp call</p>
+                            </div>
+                        </div>
+                        <label>Recent</label>
+                        <div class="chat outgoing">
+                            <div class="img-box">
+                                <img src="IMG_20220507_214458_181.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Rahul</h4>
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="message">
+                                    <p><i class="fas fa-long-arrow-alt-up"></i> Today, 6:57 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat outgoing">
+                            <div class="img-box">
+                                <img src="IMG_20220530_000813_539.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Neha</h4>
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="message">
+                                    <p><i class="fas fa-long-arrow-alt-up"></i> Yesterday, 3:18 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat incoming">
+                            <div class="img-box">
+                                <img src="IMG_20220530_000813_539.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Neha</h4>
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="message">
+                                    <p><i class="fas fa-long-arrow-alt-up"></i> Yesterday, 12:14 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="chat outgoing">
+                            <div class="img-box">
+                                <img src="IMG_20220530_110918_216.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="chat-head">
+                                    <h4>Yash</h4>
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="message">
+                                    <p><i class="fas fa-long-arrow-alt-up"></i> December 9, 9:48 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-phone"></i>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+        <script src="final.js"></script>
+</body>
+
+</html>
