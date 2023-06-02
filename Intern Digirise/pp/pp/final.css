@@ -1,0 +1,359 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   
+}
+
+:root{
+    --bg-color:#2a2a2a;
+    --second-bg-color:#202020;
+    --text-color:#fff;
+--second-color:#ccc;
+--main-color:#ff4d05;
+--big-font:5rem;
+--h2-font:3rem;
+ --p-font:1.1rem;
+
+}
+
+body{
+    background:var(--bg-color);
+     color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display:flex ;
+    align-items: center ;
+    justify-content: space-between;
+    border-bottom: 1px solid transparent;
+    transition : all .45s ease ;
+    padding: 22px;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 15%;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition : all .45s ease ;
+}
+.navlist a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+font-size: 35px;
+color: var(--text-color);
+cursor: pointer;
+z-index: 10001;
+margin-left: 15px;
+display: none;
+}
+
+.home{
+    background: url("headphones_bw_headset_120277_1920x1080.jpg");
+    height: 100vh;
+    width: 100%;
+
+}
+.home-text{
+    position: relative;
+    top: 300px;
+    left: 10%;
+    color: var(--text-color);
+  
+}
+.home h1{
+    font-size: 80px;
+    color: var(--text-color);
+}
+.home h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.one{
+    font-size: 20px;
+}
+.btn1{
+    background: var(--main-color);
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border-color: var(--main-color);
+
+}
+.btn2{
+    color: var(--main-color);
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border-color: var(--text-color);
+}
+.btn1:hover{
+   cursor: pointer;
+   transition: all .3s ease-in-out;
+   background: var(--text-color);
+   color: var(--main-color);
+}
+.btn2:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background: var(--main-color);
+    color: var(--text-color);
+
+ }
+
+.imgabout{
+    height: 600px;
+    overflow: hidden;
+border-radius: 50px;
+
+}
+.aboutbody{
+    display: flex;
+    margin: 10px 10%;
+    letter-spacing: 1.5px;
+    justify-content: space-between;
+}
+.abouthead{
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: center;
+    
+}
+#para{
+    width: 800px;
+    text-align: justify;
+}
+#ab{
+    margin: 50px 10% 0px;
+    letter-spacing: 2px;
+}
+#cr{
+    margin: 0px 10% 40px; 
+}
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 10%;
+
+}
+.service{
+    background-color: var(--second-bg-color);
+}
+.maintext{
+    color: var(--text-color);
+    text-align: center;
+    margin: 50px 8%;
+    letter-spacing: 2px;
+}
+
+.maintext h2{
+    font-size: 35px;
+    margin-top: 5px;
+}
+.maintext h3{
+    font-size: 25px;
+}
+.sbox{
+    display: flex;
+}
+
+.servicecontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap:2.5rem;
+    text-align: left;
+}
+.box{
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 30px 30px;
+    transition:all .45s ease;
+
+}
+.serviceimg{
+    padding-right: 10px;
+}
+.service h2{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.servicebutton{
+    background-color: var(--bg-color);
+    padding:5px;
+   border-radius: 8px;
+   color: var(--text-color);
+   border-color :var(--bg-color);
+   margin-top: 8px;
+   width: 90px;
+}
+.box:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.servicebutton:hover{
+    cursor: pointer;
+   background-color: #ffffff92;
+   color: var(--text-color);
+}
+
+.portfoliocontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    gap:2.5rem;
+    text-align: left;
+    align-items: center;
+    margin: 40px 10%;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pro{
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1), #e06231);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+}
+.layer h5{
+    font-size: 25px;
+    color: var(--text-color);
+}
+.layer p{
+    width: 500px;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+.contact{
+    background: var(--second-bg-color);
+    padding: 80px 20%;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 2.5em;
+
+     
+}
+.contacttext{
+    text-align: center;
+    color: var(--text-color);
+}
+.contacttext h2{
+    font-size: 35px;
+}
+
+.contacttext p{
+    margin-bottom: 20px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.list li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.list li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.list li a:hover{
+    color: var(--second-color);
+    }
+
+    .form{
+        margin-top: 50px;
+    }
+.form input{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ 
+    }
+    .form textarea{
+        width: 600px;
+        height: 150px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px
+        }
+
+        .form button{
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: var(--second-color);
+            color: var(--main-color);
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 700;
+        }
+.list img{
+    background: var(--main-color);
+    padding: 5px;
+    border-radius: 40px;
+}
